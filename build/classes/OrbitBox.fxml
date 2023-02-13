@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="OrbitBoxController">
+    <children>
+      <ImageView fitHeight="600.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/10.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="orbitBtn" layoutX="16.0" layoutY="157.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="190.0" style="-fx-background-color: transparent;" />
+        <Button fx:id="contentBtn" layoutX="19.0" layoutY="239.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="190.0" style="-fx-background-color: transparent;" />
+        <Button fx:id="generalBtn" layoutX="16.0" layoutY="314.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="190.0" style="-fx-background-color: transparent;" />
+        <Button fx:id="orbitDashBtn" layoutX="16.0" layoutY="392.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="190.0" style="-fx-background-color: transparent;" />
+  <Label fx:id="LabelTitle" layoutX="249.0" layoutY="45.0" prefHeight="29.0" prefWidth="311.0" text="Ethical Hacking" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="liveBtn" alignment="TOP_CENTER" layoutX="630.0" layoutY="41.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="142.0" style="-fx-background-color: #7ED957;" text="Live preview" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="League Spartan SemiBold" size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="LabelDesc" layoutX="249.0" layoutY="246.0" prefHeight="74.0" prefWidth="523.0" text="This orbit is for those who are interested to developer cross-platform desktop applicaiton. " textFill="WHITE" wrapText="true">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="logoIMG" fitHeight="150.0" fitWidth="200.0" layoutX="249.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true" style="-fx-background-radius: 10;">
+         <image>
+            <Image url="@Logo.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="LabelTitle2" layoutX="484.0" layoutY="136.0" prefHeight="29.0" prefWidth="75.0" text="Price:  " textFill="#7ed957">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="LabelTitle21" layoutX="484.0" layoutY="176.0" prefHeight="29.0" prefWidth="103.0" text="Visibility:" textFill="#7ed957">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="priceLabel" layoutX="585.0" layoutY="138.0" prefHeight="29.0" prefWidth="187.0" text="320 USD" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="visLabel" layoutX="587.0" layoutY="177.0" prefHeight="29.0" prefWidth="187.0" text="PUBLIC" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="LabelLastEdit" layoutX="247.0" layoutY="320.0" prefHeight="40.0" prefWidth="516.0" text="Last Edit Date: 2023-02-07 12:54:27" textFill="WHITE" wrapText="true">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="LabelCreatedDate" layoutX="248.0" layoutY="355.0" prefHeight="40.0" prefWidth="516.0" text="Created Date: 2023-02-07 12:54:27" textFill="WHITE" wrapText="true">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

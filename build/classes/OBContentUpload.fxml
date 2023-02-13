@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="OBContentUploadController">
+    <children>
+      <ImageView fitHeight="600.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/12.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="orbitBtn" layoutX="16.0" layoutY="157.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="190.0" style="-fx-background-color: transparent;" />
+        <Button fx:id="contentBtn" layoutX="19.0" layoutY="239.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="190.0" style="-fx-background-color: transparent;" />
+        <Button fx:id="generalBtn" layoutX="16.0" layoutY="314.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="190.0" style="-fx-background-color: transparent;" />
+        <Button fx:id="orbitDashBtn" layoutX="16.0" layoutY="392.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="190.0" style="-fx-background-color: transparent;" />
+      <TextField fx:id="TFtitle" layoutX="257.0" layoutY="151.0" prefHeight="26.0" prefWidth="483.0" promptText="write a seo friendly title" />
+      <TextArea fx:id="TAdesc" layoutX="257.0" layoutY="227.0" prefHeight="60.0" prefWidth="482.0" promptText="Write a description that attracts learner to enroll into your course" wrapText="true" />
+      <TextField fx:id="TFIndexNo" layoutX="428.0" layoutY="383.0" prefHeight="26.0" prefWidth="110.0" promptText="USD" />
+      <ComboBox fx:id="CBvisibility" layoutX="620.0" layoutY="383.0" prefHeight="26.0" prefWidth="116.0" promptText="Choose any" style="-fx-background-color: white;" />
+      <Button fx:id="btnCreateOrbitBox" alignment="TOP_CENTER" layoutX="254.0" layoutY="510.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="292.0" style="-fx-background-color: #00A8F0;" text="create a new orbit box" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="League Spartan SemiBold" size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="chooseImgBtn" alignment="TOP_CENTER" layoutX="257.0" layoutY="430.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="178.0" style="-fx-background-color: #7ED957;" text="choose thumbnail" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="League Spartan SemiBold" size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="imgLabel" layoutX="257.0" layoutY="470.0" prefHeight="32.0" prefWidth="190.0" text="Image Size (1280 X 720 px) Supported Format: .png .jpg" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="League Spartan SemiBold" size="14.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="LoadedImg" fitHeight="60.0" fitWidth="60.0" layoutX="447.0" layoutY="432.0" pickOnBounds="true" preserveRatio="true" />
+      <ComboBox fx:id="CBvisibility1" layoutX="618.0" layoutY="467.0" prefHeight="26.0" prefWidth="116.0" promptText="Choose any" style="-fx-background-color: white;" />
+      <ComboBox fx:id="CBContentType" layoutX="257.0" layoutY="383.0" prefHeight="26.0" prefWidth="116.0" promptText="Choose any" style="-fx-background-color: white;" />
+      <TextField fx:id="TFlink" layoutX="361.0" layoutY="314.0" prefHeight="26.0" prefWidth="379.0" promptText="paste private or public youtube link / pdf link" />
+      <Label fx:id="imgLabel1" layoutX="255.0" layoutY="311.0" prefHeight="32.0" prefWidth="102.0" text="Content URL" textFill="WHITE" wrapText="true">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="NotificationsController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/3.png" />
+         </image>
+      </ImageView>
+        <Button fx:id="dashBtn" layoutX="19.0" layoutY="144.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="190.0" style="-fx-background-color: transparent;" />
+        <Button fx:id="notifBtn" layoutX="21.0" layoutY="214.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="190.0" style="-fx-background-color: transparent;" />
+        <Button fx:id="orbitBtn" layoutX="21.0" layoutY="297.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="190.0" style="-fx-background-color: transparent;" />
+        <Button fx:id="studBtn" layoutX="21.0" layoutY="367.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="190.0" style="-fx-background-color: transparent;" />
+        <Button fx:id="settingBtn" layoutX="21.0" layoutY="447.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="190.0" style="-fx-background-color: transparent;" />
+        <Button fx:id="LogoutBtn" layoutX="17.0" layoutY="508.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="190.0" style="-fx-background-color: transparent;" />
+  
+        <ScrollPane fx:id="notifItems" fitToHeight="true" fitToWidth="true" layoutX="253.0" layoutY="106.0" prefHeight="426.0" prefWidth="500.0" style="-fx-background-color: transparent;" stylesheets="@style.css">
+         <content>
+            <VBox fx:id="notifItemHolder" prefHeight="424.0" prefWidth="481.0" spacing="20.0" style="-fx-background-color: transparent; -fx-background-radius: 20px;" stylesheets="@style.css" />
+         </content></ScrollPane>
+   </children>
+</AnchorPane>

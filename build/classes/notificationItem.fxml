@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="100.0" prefWidth="500.0" style="-fx-background-color: #374149; -fx-background-radius: 10px;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="31.0" fitWidth="30.0" layoutX="24.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/icons/notif.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="TFsubject" layoutX="65.0" layoutY="16.0" prefHeight="28.0" prefWidth="291.0" text="IMPORTANT NOTICE" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="League Spartan SemiBold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="TFTime" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="341.0" layoutY="16.0" prefHeight="28.0" prefWidth="127.0" text="12:00 PM 28/10/22" textAlignment="RIGHT" textFill="WHITE">
+         <font>
+            <Font name="League Spartan SemiBold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="TFbody" layoutX="26.0" layoutY="45.0" maxWidth="459.0" prefHeight="42.0" prefWidth="442.0" text="Stop dreaming and start doing. You automatically lose the chances you don't take." textFill="WHITE" wrapText="true" />
+   </children>
+</AnchorPane>
