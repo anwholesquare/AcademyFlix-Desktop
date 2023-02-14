@@ -180,4 +180,35 @@ public class APIHelper {
             return false;
         }  
     }
+    
+    public static List<OrbitBoxStorage> checkOrbitBoxList () {
+         
+        if (!AuthSession.readCurrentOID().equals("@ERROR")) {
+            String url = "https://khandokeranan.com/projects/academyflix/orbitboxlist.php?oid=" + AuthSession.readCurrentOID();
+            String res = urlResponse(url);
+            List<OrbitBoxStorage> ol = new ArrayList<>();
+            if (!res.equals("@ERROR")) {
+                JSONArray jsonarr = new JSONArray(res);
+
+                for (int i =0; i<jsonarr.length(); i++) {
+                    JSONObject jso = (JSONObject) jsonarr.getJSONObject(i);
+                    System.out.println(jso.getString("title"));
+                    OrbitBoxStorage ob = new OrbitBoxStorage (
+                            jso.getString("id"),jso.getString("orbit_id"),
+                            jso.getString("content_type"),jso.getString("index_no"),jso.getString("title"),
+                            jso.getString("description"),jso.getString("link"),jso.getString("thumbnail"),
+                            jso.getString("views"),jso.getString("accessibility"),jso.getString("visibility"),
+                            jso.getString("published_date"),jso.getString("created_date")
+                    );
+                    ol.add(ob);
+                    
+                }
+            }
+        
+            return ol;
+        }
+        
+        return null;
+        
+    }
 }

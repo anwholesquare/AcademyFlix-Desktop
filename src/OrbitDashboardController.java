@@ -51,6 +51,7 @@ public class OrbitDashboardController implements Initializable {
         // TODO
         OrbitScrollPane.setHbarPolicy(ScrollPane.ScrollBarPolicy.NEVER);
         OrbitScrollPane.setVbarPolicy(ScrollPane.ScrollBarPolicy.NEVER);
+        OrbitScrollPane.setFitToWidth(true);
         // TODO
         List<Node> nodeList = new ArrayList<>();
         List<Orbit> ol = APIHelper.checkOrbitList(AuthSession.readID());
